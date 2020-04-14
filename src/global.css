@@ -1,0 +1,67 @@
+/* Unable to preventDefault inside passive */
+* {
+  /* touch-action: none; */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: #F5F5F9!important;
+}
+/* Global css */
+html,
+body,
+#root {
+  font-size: 28px;
+  width: 100%;
+  height: 100%;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+}
+
+body .am-button-primary {
+  background: #f36218;
+  height: 96px;
+  line-height: 96px;
+  font-size: 32px;
+  font-weight: bold;
+}
+body .am-button-primary.am-button-active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #e05007;
+}
+body .am-button-primary::before {
+  height: 96px;
+  line-height: 96px;
+  font-size: 32px;
+  border: 0;
+}
+
+body .am-toast-notice-content .am-toast-text,
+body .am-toast-notice-content .am-toast-text-icon {
+  width: 100%;
+  font-size: 26px;
+  border: 0;
+  border-radius: 8px;
+}
+body .am-toast-notice-content .am-toast-text.am-toast-text-icon {
+  padding: 20px 20px;
+}
+body .am-toast-notice-content .am-icon-lg {
+  width: 70px;
+  height: 70px;
+}
+body .am-toast-notice-content .am-toast-text-info {
+  line-height: 24px;
+}
+.slider-frame{
+  height: 100%!important;
+}
+ul,li{list-style:none;}
