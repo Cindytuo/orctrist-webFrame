@@ -3,9 +3,12 @@
 # node>=10
 ## Quick Overview
 ```sh
-npm i -g ost-umframe
+npm i -g orcrist-umframe
 
-ost-umframe init
+orcrist-umframe init
+
+--mobile
+--web
 
 cd [my-app]
 
