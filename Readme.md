@@ -1,17 +1,15 @@
-# orctrist-webFrame
-## base umijs@2.13.x 
+# ost-umframe
+# base umijs@2.13.x
+# node>=10
+## Quick Overview
+```sh
+npm i -g ost-umframe
 
-node >=10
-
-```js
-npm i -g ost-webFrame
-
-ost-webFrame init
+ost-umframe init
 
 cd [my-app]
 
 cnpm install
 
 npm start
-
 ```

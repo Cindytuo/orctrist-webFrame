@@ -8,11 +8,14 @@
     "precommit": "lint-staged"
   },
   "dependencies": {
+    "@med/buzz": "^1.0.7",
     "dva": "^2.6.0-beta.6",
     "antd": "^3.19.5",
-    "orcrist-request": "^1.2.1",
     "react": "^16.8.6",
-    "react-dom": "^16.8.6"
+    "react-dom": "^16.8.6",
+    "orcrist-request": "^1.2.1",
+    "orcrist-utils": "^1.0.1",
+    "es6-promise": "^4.2.8"
   },
   "devDependencies": {
     "@types/jest": "^23.3.12",
@@ -34,7 +37,7 @@
     "umi-types": "^0.3.0"
   },
   "lint-staged": {
-    "*.{ts,tsx}": [],
+    "*.{ts,tsx}": ["eslint --fix", "git add"],
     "*.{js,jsx}": ["eslint --fix", "git add"]
   },
   "engines": {

@@ -1,4 +1,4 @@
-import { traceLog } from '@/utils/common';
+import { traceLog } from 'orcrist-utils';
 
 window.onerror = (message, source, lineno, colno, error) => {
   const errorLog = `:::${message}:::${source}:::${lineno}:::${colno}:::`;
@@ -6,7 +6,7 @@ window.onerror = (message, source, lineno, colno, error) => {
 
   traceLog({
     log: encodeURIComponent(errorLog),
-    scene: 'Health-Insure',
+    scene: 'common',
   });
 };
 
@@ -17,5 +17,5 @@ export const dva = {
       console.error(err.message);
     },
   },
-  // plugins: [require('dva-logger')()],
 };
+

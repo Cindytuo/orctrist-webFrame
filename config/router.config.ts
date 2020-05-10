@@ -1,7 +1,7 @@
 export default [
   {
     path: '/',
-    component: '../pages/index',
-    title: 'Title',
+    component: '../pages/Main',
+    title: '脚手架',
   }
 ];

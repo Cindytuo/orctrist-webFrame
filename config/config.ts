@@ -30,7 +30,8 @@ const config: IConfig = {
         dynamicImport: {
           webpackChunkName: true,
         },
-        title: 'Title',
+        title: '',
+        links: [{ rel: 'icon', href: '<%= PUBLIC_PATH %>static/favico.png' }],
         dll: true,
         hd: false,
         fastClick: false,
@@ -50,9 +51,7 @@ const config: IConfig = {
       },
     ],
   ],
-  extraBabelPlugins: [
-    ['import', { libraryName: 'antd-mobile', libraryDirectory: 'lib', style: true }],
-  ],
+  outputPath: './dist',
   alias: {
     '@': require('path').resolve(__dirname, 'src'),
   },

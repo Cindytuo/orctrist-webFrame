@@ -1,67 +1,108 @@
-/* Unable to preventDefault inside passive */
-* {
-  /* touch-action: none; */
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-body{
-  background-color: #F5F5F9!important;
-}
-/* Global css */
 html,
 body,
-#root {
-  font-size: 28px;
-  width: 100%;
-  height: 100%;
-}
-
-body,
+div,
+ul,
+li,
+p,
+footer,
+header,
+article,
+a,
+b,
+em,
+nav,
+form,
+input,
+textarea,
+select,
+button,
+i,
 h1,
 h2,
 h3,
 h4,
-h5 {
-  margin: 0;
+h5,
+h6 {
+    padding: 0;
+    margin: 0;
+    border: none;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
 }
 
-body .am-button-primary {
-  background: #f36218;
-  height: 96px;
-  line-height: 96px;
-  font-size: 32px;
-  font-weight: bold;
-}
-body .am-button-primary.am-button-active {
-  color: rgba(255, 255, 255, 0.3);
-  background-color: #e05007;
-}
-body .am-button-primary::before {
-  height: 96px;
-  line-height: 96px;
-  font-size: 32px;
-  border: 0;
+input:focus,
+textarea:focus,
+button:focus {
+        outline: none;
 }
 
-body .am-toast-notice-content .am-toast-text,
-body .am-toast-notice-content .am-toast-text-icon {
-  width: 100%;
-  font-size: 26px;
-  border: 0;
-  border-radius: 8px;
+body {
+    font: 0.14rem/1.5 "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", "Hiragino Sans GB", "Heiti SC", "WenQuanYi Micro Hei", sans-serif;
+    color: #040404;
+    background: #eee;
 }
-body .am-toast-notice-content .am-toast-text.am-toast-text-icon {
-  padding: 20px 20px;
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    /* IOS禁止微信调整字体大小 */
+    -webkit-text-size-adjust: 100% !important;
+    text-size-adjust: 100% !important;
+    -moz-text-size-adjust: 100% !important;
 }
-body .am-toast-notice-content .am-icon-lg {
-  width: 70px;
-  height: 70px;
+
+header,
+nav,
+footer,
+article {
+    display: block;
 }
-body .am-toast-notice-content .am-toast-text-info {
-  line-height: 24px;
+
+a {
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
 }
-.slider-frame{
-  height: 100%!important;
+
+a:active,
+a:hover {
+    outline-width: 0;
 }
-ul,li{list-style:none;}
+
+::-webkit-input-placeholder {
+    color: inherit;
+    opacity: 0.54;
+}
+
+::-webkit-file-upload-button {
+    -webkit-appearance: button;
+    font: inherit;
+}
+
+.scrolling {
+    overflow-y: scroll!important;
+    -webkit-overflow-scrolling: touch!important;
+}
+
+img {
+    border: none;
+    max-width: 100%;
+}
+.clearfix:after {
+  content: " ";
+  display: block;
+  clear: both;
+  height: 0;
+}
+.clearfix {
+  zoom: 1;
+}
+#root{
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+}
+.am-input-extra{
+    max-height: 100%!important;
+}

@@ -8,12 +8,11 @@
     "esModuleInterop": true,
     "sourceMap": true,
     "baseUrl": ".",
-    "strict": false,
+    "strict": true,
     "paths": {
-      "@/*": ["src/*"]
+      "@/*": ["src/*"],
+      "@tmp/*": ["src/pages/.umi/*"]
     },
-    "allowSyntheticDefaultImports": true,
-    "noImplicitAny": false
-  },
-  "exclude": ["node_modules"]
+    "allowSyntheticDefaultImports": true
+  }
 }
